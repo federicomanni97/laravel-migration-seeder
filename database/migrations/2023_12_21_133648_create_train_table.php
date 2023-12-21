@@ -18,10 +18,10 @@ return new class extends Migration
             $table->string('agency', 255);
             $table->string('departure_station', 100);
             $table->string('arrival_station', 100);
-            $table->dateTime('departure_time')->unsigned();
-            $table->dateTime('arrival_time')->unsigned();
+            $table->dateTime('departure_time');
+            $table->dateTime('arrival_time');
             $table->string('train_code', 100);
-            $table->tinyInt('cab_number', 20)->unsigned();
+            $table->tinyInteger('cab_number')->unsigned();
             $table->string('punctual_train');
             $table->string('deleted_train');
             $table->timestamps();
